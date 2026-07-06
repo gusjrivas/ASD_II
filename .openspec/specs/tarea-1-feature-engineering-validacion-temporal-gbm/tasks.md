@@ -1,0 +1,20 @@
+# Tasks: Tarea 1 - Feature Engineering y Validacion Temporal con GBM
+
+- [x] Leer el notebook base de `Tareas/`.
+- [x] Revisar notebooks de clase relacionados con leakage, validacion temporal, feature engineering y baselines.
+- [ ] Revisar slides o material teorico de las clases relacionadas si aportan contexto a la resolucion.
+- [x] Crear la carpeta de entrega `Entregas/Entrega_1/`.
+- [x] Crear la copia de entrega en `Entregas/Entrega_1/`.
+- [x] Preparar el notebook para ejecucion en Google Colab.
+- [x] Identificar dataset, target, frecuencia temporal y horizonte de prediccion.
+- [x] Definir estrategia de split temporal.
+- [x] Implementar o revisar features temporales sin leakage.
+- [x] Entrenar baseline o referencia simple.
+- [x] Entrenar modelo GBM segun consigna.
+- [x] Evaluar metricas y comparar modelos.
+- [x] Escribir conclusiones.
+- [ ] Ejecutar/verificar el notebook completo.
+- [x] Revisar compatibilidad con Colab: dependencias, rutas, imports y carga de datos.
+- [x] Crear `Entregas/Entrega_1/README.md` explicando detalladamente la resolucion.
+- [x] Incluir en el README el material de clase utilizado como referencia.
+- [x] Actualizar `notes.md`.
