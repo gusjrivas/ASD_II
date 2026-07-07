@@ -19,7 +19,7 @@ Resolver la Tarea 1 de la materia, enfocada en feature engineering temporal, val
 
 ## Archivo de entrega esperado
 
-- `Entregas/Entrega_1/Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb`
+- `Entregas/Entrega_1/a1620_Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb`
 - `Entregas/Entrega_1/README.md`
 
 La entrega debe ser compatible con Google Colab.
@@ -35,6 +35,12 @@ La entrega debe ser compatible con Google Colab.
 - [ ] Entrenar y evaluar al menos un modelo GBM si la consigna lo requiere.
 - [ ] Comparar resultados contra una referencia o baseline cuando corresponda.
 - [ ] Escribir conclusiones claras en el notebook.
+- [ ] Incluir el enunciado completo dentro del notebook de entrega.
+- [ ] Incluir los datos del alumno al inicio de la resolucion.
+- [ ] Resolver cada parte debajo de su titulo original.
+- [ ] Para cada parte, escribir primero la respuesta/explicacion y luego el codigo que la resuelve.
+- [ ] Dejar visibles en codigo las definiciones pedidas por la consigna, por ejemplo `features_fecha` y `features_all`.
+- [ ] Usar voz impersonal en las explicaciones.
 - [ ] Evitar rutas locales absolutas y preparar el flujo para Colab.
 - [ ] Crear `Entregas/Entrega_1/README.md` explicando como se resolvio la entrega.
 
@@ -47,6 +53,8 @@ La entrega debe ser compatible con Google Colab.
 - [ ] Las features temporales estan documentadas.
 - [ ] Las metricas estan reportadas e interpretadas.
 - [ ] Las conclusiones responden a la consigna.
+- [ ] Las conclusiones integran validacion, leakage, comparacion de features, metricas, interpretabilidad y limitaciones.
+- [ ] Cada seccion de la consigna tiene una resolucion y un bloque de codigo cercano cuando corresponde.
 - [ ] El README de entrega permite entender el proceso sin abrir todo el notebook.
 - [ ] El README menciona el material de clase usado como referencia.
 

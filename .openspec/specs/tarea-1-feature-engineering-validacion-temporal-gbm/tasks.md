@@ -13,6 +13,12 @@
 - [x] Entrenar modelo GBM segun consigna.
 - [x] Evaluar metricas y comparar modelos.
 - [x] Escribir conclusiones.
+- [x] Incluir enunciado completo en el notebook de entrega.
+- [x] Incluir datos del alumno al inicio de la resolucion.
+- [x] Reestructurar la resolucion para responder parte por parte.
+- [x] Dejar el codigo de cada parte inmediatamente debajo de su explicacion cuando corresponda.
+- [x] Dejar visible en la Parte 2 el armado en codigo de `features_fecha` y `features_all`.
+- [x] Mejorar conclusiones con una interpretacion integrada de validacion, leakage, features, MASE e interpretabilidad.
 - [ ] Ejecutar/verificar el notebook completo.
 - [x] Revisar compatibilidad con Colab: dependencias, rutas, imports y carga de datos.
 - [x] Crear `Entregas/Entrega_1/README.md` explicando detalladamente la resolucion.

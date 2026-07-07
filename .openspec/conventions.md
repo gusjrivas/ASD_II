@@ -16,6 +16,13 @@ Para notebooks de tareas y entregas:
 - conservar la consigna original cuando sea util para rastrear el objetivo;
 - no borrar material de clase o enunciado salvo que se cree una copia de trabajo;
 - priorizar reproducibilidad sobre experimentos aislados.
+- cuando la consigna este dividida en partes, conservar el titulo de cada parte y resolverla inmediatamente debajo;
+- en cada parte, comenzar con una breve seccion `Resolucion` y luego incluir el codigo que implementa esa parte;
+- evitar que una parte dependa visualmente de codigo "hecho antes" sin mostrar donde se resuelve;
+- si una variable, grupo de features, particion o modelo es pedido explicitamente por la consigna, dejar su definicion visible en codigo debajo de la parte correspondiente;
+- redactar las explicaciones academicas en voz impersonal;
+- incluir al inicio de la resolucion los datos del alumno cuando el usuario los indique;
+- dejar conclusiones desarrolladas, conectando metodologia, resultados, interpretacion y limitaciones, no solo una lista de afirmaciones generales.
 
 ## Material de clase
 

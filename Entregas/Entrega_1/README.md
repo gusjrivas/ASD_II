@@ -6,7 +6,7 @@ Resolver la Tarea 1 de Analisis de Series de Tiempo II usando la serie mensual A
 
 ## Archivos
 
-- Notebook de resolucion: `Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb`
+- Notebook de resolucion: `a1620_Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb`
 - Explicacion de la entrega: `README.md`
 - Notebook fuente: `../../Tareas/Tarea_1,_Feature_Engineering_y_Validación_Temporal_con_GBM.ipynb`
 
@@ -94,7 +94,7 @@ Ademas, una celda genera un resumen cuantitativo automatico a partir de las metr
 
 ## Como ejecutar en Google Colab
 
-1. Abrir `Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb` en Google Colab.
+1. Abrir `a1620_Tarea_1_Feature_Engineering_y_Validacion_Temporal_con_GBM.ipynb` en Google Colab.
 2. Ejecutar las celdas de arriba hacia abajo.
 3. No se requiere GPU.
 4. No se requiere montar Google Drive.
@@ -107,4 +107,3 @@ El notebook fue preparado en el repositorio local, pero no fue ejecutado localme
 ## Conclusiones
 
 La entrega queda estructurada para comparar correctamente el enfoque valido de forecasting contra un holdout con shuffle. La solucion prioriza evitar leakage temporal, construir features causales y evaluar contra un baseline estacional fuerte mediante MASE.
-
