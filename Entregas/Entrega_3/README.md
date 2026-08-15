@@ -25,7 +25,9 @@ De los ejemplos se conserva el formato long de NeuralForecast, la separacion tem
 
 La fecha y la hora se combinan en `ds`, `cnt` se renombra como `y` y se agrega un identificador constante. La serie se reindexa sobre una grilla horaria completa. Los huecos se completan sin mirar el futuro: primero con el valor de la misma hora de la semana anterior, luego con el de la misma hora del dia anterior y finalmente mediante propagacion del ultimo valor disponible.
 
-Se usa un horizonte de 24 horas y una ventana de entrada de 168 horas. La semana de contexto permite representar simultaneamente la estacionalidad diaria, el ciclo semanal y la diferencia entre dias habiles y fines de semana. Las ultimas 24 horas se reservan como test y las 24 anteriores del entrenamiento como validacion interna.
+Se usa un horizonte de 24 horas y una ventana de entrada de 168 horas. La semana de contexto permite representar simultaneamente la estacionalidad diaria, el ciclo semanal y la diferencia entre dias habiles y fines de semana. Las ultimas 24 horas, correspondientes al 31 de diciembre de 2012, se reservan como test. Las 24 horas anteriores del entrenamiento se usan como validacion interna para calcular la perdida de validacion; esta configuracion no activa detencion temprana.
+
+Se fijan las semillas de Python, NumPy y PyTorch y se solicitan algoritmos deterministas para reducir la variabilidad entre ejecuciones. Esto mejora la reproducibilidad, aunque no garantiza resultados identicos entre distintas versiones de las librerias, plataformas o GPU.
 
 ## Modelos
 
@@ -34,6 +36,16 @@ N-BEATS y N-HiTS se entrenan con MAE. DeepAR se entrena con una DistributionLoss
 ## Evaluacion
 
 La tabla final informa MAE, RMSE y MAPE. MAPE excluye objetivos iguales a cero y el notebook informa cuantos casos fueron omitidos. La visualizacion superpone el historico reciente, el test, los tres pronosticos puntuales y la banda de DeepAR.
+
+Los resultados guardados en el notebook son:
+
+| Modelo | MAE | RMSE | MAPE |
+| --- | ---: | ---: | ---: |
+| N-BEATS | 27.015 | 40.934 | 83.39% |
+| N-HiTS | 32.293 | 52.083 | 101.24% |
+| DeepAR (mediana) | 66.425 | 87.877 | 112.41% |
+
+N-BEATS obtiene el menor error puntual en esta ventana. El intervalo predictivo del 90% de DeepAR alcanza una cobertura empirica del 16.7% (4 de 24 horas).
 
 ## Como ejecutar en Google Colab
 
@@ -44,4 +56,4 @@ La tabla final informa MAE, RMSE y MAPE. MAPE excluye objetivos iguales a cero y
 
 ## Limitaciones
 
-El resultado principal corresponde a una unica ventana de 24 horas y una sola semilla. Sirve para comparar los modelos en ese origen, pero no demuestra superioridad general. El notebook propone robustecer la conclusion mediante rolling-origin, multiples semillas, metricas por horizonte y cobertura empirica de intervalos.
+El resultado principal corresponde a una unica ventana de 24 horas y una sola semilla. Ademas, el test es el 31 de diciembre de 2012, una fecha potencialmente atipica por ser vispera de Año Nuevo. Sirve para comparar los modelos en ese origen, pero no demuestra superioridad general ni permite concluir por si solo que DeepAR este descalibrado. El notebook propone robustecer la conclusion mediante rolling-origin, multiples semillas, metricas por horizonte y evaluacion de cobertura y ancho de los intervalos predictivos.
